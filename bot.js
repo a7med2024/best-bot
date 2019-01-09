@@ -488,7 +488,6 @@ client.on("guildMemberAdd", member => {
 client.on('message', async message =>{
   if (message.author.boss) return;
 	var prefix = "-";
-
 if (!message.content.startsWith(prefix)) return;
 	let command = message.content.split(" ")[0];
 	 command = command.slice(prefix.length);
